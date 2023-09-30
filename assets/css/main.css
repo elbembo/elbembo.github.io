@@ -275,7 +275,7 @@ th {
 
 body {
     background-color: #efefef;
-    font-size: 16px;
+    font-size: 1.4rem;
     line-height: 1.6;
     font-family: "LMRomanSlant10", serif;
     color: #111;
@@ -517,12 +517,14 @@ svg path {
 }
 
 #hero {
-    position: relative;
+   position: relative;
     width: 100%;
     max-width: 100%;
     height: 100%;
     background-color: #efefef;
-    overflow: hidden
+    /* overflow: hidden; */
+    top: 0;
+    position: absolute;
 }
 
 @media (max-width: 768px) {
@@ -606,12 +608,13 @@ svg path {
     display: flex;
     width: 100%;
     max-width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    margin-top: 9rem;
 }
 
 #hero .wrapper .welcome {
@@ -672,22 +675,24 @@ svg path {
 
 @media (max-width: 1023px) {
     #hero .wrapper .welcome {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: end;
-        -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-        align-items: flex-end;
-        text-align: right
-    }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* -webkit-box-align: end; */
+    /* -webkit-align-items: flex-end; */
+    -ms-flex-align: end;
+    /* align-items: flex-end; */
+    /* text-align: right; */
+    height: auto;
+    overflow: auto;
+}
 
     #hero .wrapper .my-pic {
         display: none
