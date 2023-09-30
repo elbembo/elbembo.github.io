@@ -400,7 +400,8 @@ svg path {
 }
 
 #hero svg {
-    left: 10px
+    left: 10px;
+        width: 93vw;
 }
 
 #about svg,
