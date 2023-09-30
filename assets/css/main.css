@@ -391,7 +391,7 @@ hr {
 }
 
 svg {
-    position: absolute;
+    position: fixed;
     
 }
 
@@ -535,7 +535,7 @@ svg path {
 }
 
 #hero header {
-    position: absolute;
+    position: fixed;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
